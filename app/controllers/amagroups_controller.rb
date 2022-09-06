@@ -80,7 +80,6 @@ class AmagroupsController < ApplicationController
 
 
 
-
   private
     def amagroup_params
       params.require(:amagroup).permit(:name, :remark, :isused)
