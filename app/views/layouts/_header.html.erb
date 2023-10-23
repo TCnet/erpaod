@@ -17,6 +17,7 @@
         </li>
 
         <% if logged_in? %>
+          <li class="nav-item"><%= link_to "五运六气", wuyuns_path , class: "nav-link"%></li>
           <li class="nav-item"><%= link_to "模版设置", etemplates_path , class: "nav-link"%></li>
           <li class="nav-item"><%= link_to "库存管理", xstockplans_path , class: "nav-link"%></li>
           <li class="nav-item"><%= link_to "关键词", kwords_path , class: "nav-link"%></li>

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'wuyun/index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
@@ -55,6 +56,7 @@ Rails.application.routes.draw do
     resources :inoutstocks
     resources :inventories
     resources :warehouses
+    resources :wuyuns
 
     resources :xstockplans do
       member do

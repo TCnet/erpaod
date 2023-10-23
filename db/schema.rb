@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_07_10_023047) do
+ActiveRecord::Schema[7.0].define(version: 2023_10_23_133730) do
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -247,6 +247,20 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_10_023047) do
     t.datetime "updated_at", precision: nil, null: false
     t.boolean "is_current"
     t.index ["user_id"], name: "index_warehouses_on_user_id"
+  end
+
+  create_table "wuyuns", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "name"
+    t.string "year"
+    t.string "time"
+    t.string "wyst"
+    t.string "wykq"
+    t.string "wyzhy"
+    t.string "wyzhq"
+    t.string "wyzq"
+    t.string "tgyear"
   end
 
   create_table "xstockplans", force: :cascade do |t|
