@@ -87,6 +87,8 @@ group :development do
   gem 'capistrano-rbenv', "~> 2.0"
   gem 'capistrano-rails'
   gem 'capistrano-bundler'
+  gem 'capistrano3-puma'
+
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
